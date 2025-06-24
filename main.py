@@ -2,7 +2,7 @@ import os
 
 def inicio(): # Aqui estão presentes as entradas como Nome, Idade, Cidade e Estado
     print ('Bem vindo ao Reading Habits!')
-    print('Aqui você recebe estatisticas, dicas e estimativas sobre seu hábito de leitura')
+    print('Aqui você recebe estatisticas, dicas e estimativas sobre seu hábito de leitura.')
     nome = input('Para começar digite seu nome: ')
     nome = nome.title()
     while True:
@@ -14,7 +14,7 @@ def inicio(): # Aqui estão presentes as entradas como Nome, Idade, Cidade e Est
             sexo = 'masculino'
             break
         else:
-            print('Opção inválida')
+            print('Opção inválida.')
     while True:
         try:
             idade = int(input('Idade: '))
@@ -53,7 +53,7 @@ def inicio(): # Aqui estão presentes as entradas como Nome, Idade, Cidade e Est
             media_regiao = 5
             break
         else:
-            print('Estado inválido. Digite um estado do Brasil')
+            print('Estado inválido. Digite um estado do Brasil.')
 
     cidade =  input('Sua cidade: ')
     cidade = cidade.title()
@@ -80,7 +80,7 @@ def dados(nome, sexo, idade, cidade, regiao, media_regiao):
             print('Resposta inválida: digite um número: ')
     
     print('Qual estilo você prefere?')
-    print('1. Livro físico, prefiro ler no papel \n2. Livro digital, gosto de ler nas telas')
+    print('1. Livro físico, prefiro ler no papel. \n2. Livro digital, gosto de ler nas telas.')
     while True:
         preferencia = input('Opção (1 ou 2): ').strip()
         if preferencia == '1':
@@ -108,31 +108,31 @@ def estimativas(nome, digitais_ano, fisicos_ano, horas_estudo, horas_entretenime
     print(f'Agora vamos trazer algumas estimativas e curiosidades a partir dos seus dados!\n')
     leitura_ano = digitais_ano + fisicos_ano
     leitura_cinco_anos = leitura_ano * 5
-    print(f'{nome}, você leu {leitura_ano} livros no último ano')
+    print(f'{nome}, você leu {leitura_ano} livros no último ano.')
     
-    print(f'Se continuar nesse ritmo você vai ter lido {leitura_cinco_anos} livros a mais daqui a 5 anos')
+    print(f'Se continuar nesse ritmo você vai ter lido {leitura_cinco_anos} livros a mais daqui a 5 anos.')
     estudo_ano = int(horas_estudo) * 52
     entretenimento_ano = int(horas_entretenimento) * 52
-    print(f'{nome}, em 1 ano você consome em média {estudo_ano} horas em livros para estudar e consome {entretenimento_ano} para seu entretenimento')
-    input('Aperte qualquer tecla para continuar')
+    print(f'{nome}, em 1 ano você consome em média {estudo_ano} horas em livros para estudar e consome {entretenimento_ano} para seu entretenimento.')
+    input('Aperte enter para continuar.')
     return leitura_ano
 
 def regiao_comparacao(nome, cidade, regiao, media_regiao, leitura_ano):
     limpar_terminal()
     titulo()
-    print(f'{leitura_ano} livros no total')
+    print(f'{leitura_ano} livros no total.')
     porcentagem_camparacao = (leitura_ano / media_regiao) * 100
     porcentagem_camparacao = round(porcentagem_camparacao)
     if porcentagem_camparacao > 150:
-        print(f'Isso representa {porcentagem_camparacao}% a mais do que a média de livros lido na região {regiao} da sua cidade {cidade}: {media_regiao}')
+        print(f'Isso representa {porcentagem_camparacao}% a mais do que a média de livros lidos na região {regiao} da sua cidade {cidade}: {media_regiao}.')
         print(f'Parabéns, {nome}! Você esta acima da média, continue assim.')
     elif porcentagem_camparacao < 70:
-        print(f'Isso representa {porcentagem_camparacao}% da média de livros lido na região {regiao} da sua cidade {cidade}: {media_regiao}')
+        print(f'Isso representa {porcentagem_camparacao}% da média de livros lidos na região {regiao} da sua cidade {cidade}: {media_regiao}.')
         print(f'{nome}, leia mais. A média anual dos brasileiros é considerada baixa.')
     else:
-        print(f'Isso representa {porcentagem_camparacao}% da média de livros lido na região {regiao} da sua cidade {cidade}: {media_regiao}')
+        print(f'Isso representa {porcentagem_camparacao}% da média de livros lidos na região {regiao} da sua cidade {cidade}: {media_regiao}.')
         print(f'Você está perto da média. Considere ler mais, {nome}.')
-    input('Aperte qualquer tecla para continuar')
+    input('Aperte enter para continuar.')
 
 def dados_sociedade(nome, sexo, idade):
     limpar_terminal()
@@ -158,7 +158,7 @@ def dados_sociedade(nome, sexo, idade):
     else:
         print('Os homens costumam ler menos do que as mulheres no Brasil.')
         print('Você faz parte de 44% dos homens do país. Cerca de 42,9 milhões de leitores.')
-    input('Aperte qualquer tecla para continuar')
+    input('Aperte enter para continuar')
 
 def vantagens_disvantagens(preferencia):
     limpar_terminal()
@@ -168,7 +168,7 @@ def vantagens_disvantagens(preferencia):
         print('1. Experiência Sensorial: Sentir o cheiro e virar as páginas do livro trazem uma melhor experiência.')
         print('2. Colecionar: Ter uma estante de livros a seu dispor é útil, além de uma boa decoração.')
         print('3. Objeto social: Pode levar para qualquer lugar, sem precisar de uma bateria ou internet. E ainda é uma ótima opção de presente.\n')
-        print('𝐃𝐞𝐯𝐚𝐧𝐭𝐚𝐠𝐞𝐧𝐬:')
+        print('𝐃𝐞𝐬𝐯𝐚𝐧𝐭𝐚𝐠𝐞𝐧𝐬:')
         print('1. Peso e tamanho: Uma bolsa fica muito pesada com muitos livros, dependendo do tamanho pode não caber tudo.')
         print('2. Impacto na natureza: Quantas árvores cairam para se obter uma estante cheia de livros?')
         print('3. Preço: Os livros físicos são mais caros do que os digitais.')
@@ -178,7 +178,7 @@ def vantagens_disvantagens(preferencia):
         print('1. Praticidade: É muito mais fácil acessar seus livros todos em um só lugar.')
         print('2. Pouco espaço: Você só precisa de um aparelho para ler, não é pesado e é pequeno.')
         print('3. Facilidade na compra: É possivel começar a ler qualquer livro agora, sem precisar encomendar ou ir para uma loja, além de um preço melhor.\n')
-        print('𝐃𝐞𝐯𝐚𝐧𝐭𝐚𝐠𝐞𝐧𝐬')
+        print('𝐃𝐞𝐬𝐯𝐚𝐧𝐭𝐚𝐠𝐞𝐧𝐬')
         print('1. Estante vazia: Não é possivel colecionar ou ver os livros sem seu aparelho ligado.')
         print('2. Cansaço visual: Muitas horas na tela podem preudicar sua visão.')
         print('3. Bateria e wi-fi: Os livros digitais precisam de um aparelho carregado e conctado à internet.')
