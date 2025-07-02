@@ -143,7 +143,7 @@ def dados_sociedade(nome, sexo, idade):
         print('Você está na terceira faixa etária que mais lê. 67% das crianças com 10 ou menos são leitores.')
     elif 10 < idade <= 14:
         print('Você está na faixa etária que mais lê. 84% das pessoas entre 11 e 14 são leitores.')
-    elif 13 < idade < 18:
+    elif 14 < idade < 18:
         print('Você está na segunda faixa etária que mais lê. 75% das pessoas entre 14 e 17 são leitores.')
     elif 17 < idade < 41:
         print('Metade das pessoas na sua faixa etária (18 até 40) são leitores no Brasil.')
